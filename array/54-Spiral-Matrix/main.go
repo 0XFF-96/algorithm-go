@@ -26,7 +26,6 @@ func spiralOrder(matrix [][]int) []int {
         
         // 什么情况不满足这条件？
         if (r1 < r2 && c1 < c2) {
-            
             // 固定 r2
             for c:= c2-1; c > c1; c-- {
                 ans = append(ans, matrix[r2][c])
