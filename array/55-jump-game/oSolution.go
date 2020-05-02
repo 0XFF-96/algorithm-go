@@ -12,7 +12,6 @@ func canJump(nums []int) bool {
     // greedy 
     // greedy 的限制？🚫
     // 路径记录？
-    
     // dfs 的方法？
     // 是的，可以利用 dfs 的思想
     // curPos, nums,   return ?

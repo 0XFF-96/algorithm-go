@@ -2,7 +2,6 @@
 技巧：转化为问题求解
 关键点：找到递归公式 maxSubArray(A, i) = maxSubArray(A, i - 1) > 0 ? maxSubArray(A, i - 1) : 0 + A[i];  
 
-
 reference :https://leetcode.com/problems/maximum-subarray/discuss/395100/Go-golang-two-solutions
 
 ```golang 
