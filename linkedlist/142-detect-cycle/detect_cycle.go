@@ -1,5 +1,3 @@
-
-
 func detectCycle(head *ListNode) *ListNode {
     if head == nil || head.Next == nil {
         return nil 
@@ -10,10 +8,8 @@ func detectCycle(head *ListNode) *ListNode {
     // 当两个节点相遇当时候，
     // 另外一个节点，应该从哪里重启
     // 计算出数学公式
-    
     slow := head 
     fast := head 
-    
     
     // 这里填错了
     // slow != nil && fast.Next != nil 
