@@ -19,3 +19,11 @@ collect leetcode multi-solution in go
 7、能够扩展题目，联系到其他不同的算法题，抽象出共同点和通用代码
 8、隔开一个星期，再重新回顾代码是，能够想出题目的描述以及 Limitation 
 9、能够改写题目， follow-up question
+
+### 总结性文章
+1、https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
+
+
+
+### 资源
+1、动态规划 20 题目:https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/

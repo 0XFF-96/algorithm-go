@@ -39,3 +39,4 @@ func (this *MinStack) Top() int {
 func (this *MinStack) GetMin() int {
 	return this.records[len(this.records) - 1].min
 }
+

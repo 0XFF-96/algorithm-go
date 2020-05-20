@@ -1,4 +1,8 @@
+package main
 
+type ListNode struct {
+	Next *ListNode
+}
 // 根据别人思路写出来的代码
 func reverseBetween(head *ListNode, m int, n int) *ListNode {
     // reverse 一个 array 是怎么样的？
