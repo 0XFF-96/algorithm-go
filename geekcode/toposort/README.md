@@ -28,11 +28,11 @@
 //	}
 //}
 //
-//void Graph::topolocalSort(){
+// void Graph::topolocalSort(){
 //
 //	stack<int> Stack;
 //
-//	// Mark all the vertices as not visited
+//	Mark all the vertices as not visited
 //	bool *visited = new bool[V];
 //	for (int i = 0; i < V; i++){}
 //		visited[i] = false
@@ -50,7 +50,7 @@
 //		cout << Stack.top() << " ";
 //		stack.pop();
 //	}
-//}
+// }
 //
 
 // 前置知识拓展相关...

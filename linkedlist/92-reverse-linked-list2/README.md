@@ -6,7 +6,8 @@
 2-这个 youtu video 很好地解析了，recursive list 的相关作用。https://www.youtube.com/watch?v=O0By4Zq0OFc
 
 3- https://leetcode.com/problems/reverse-linked-list-ii/solution/ 
-4- 
+4- 更进一步的链表拓展题目：https://zhuanlan.zhihu.com/p/77573456
+5-
 
 
 
