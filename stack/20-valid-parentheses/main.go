@@ -16,12 +16,14 @@ func isValid(s string) bool {
 	}
 
 	// 可以减少类型转换的
-	stack := []string{}
+	// stack []byte ?
+	// 可以减少类型转换的次数。
+	var stack []string
 	for i:=0;i < len(s);i ++{
 		char := s[i]
 		v, ok := m[char]
 		if ok {
-			// we may have edge case when ) was push into stack before any open parathesis
+			// we may have edge case when ) was push into stack before any open parenthesis
 			if len(stack) == 0 {
 				return false
 			}
@@ -33,7 +35,7 @@ func isValid(s string) bool {
 			}
 
 		} else {
-			// if we have open paratheses pop it in to stack
+			// if we have open parentheses pop it in to stack
 			stack = append(stack, string(char))
 		}
 	}
