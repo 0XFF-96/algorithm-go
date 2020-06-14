@@ -1,7 +1,8 @@
+package main
 // 能够 ac 的答案
 // 但是时间成本和开销很大
 // 
-func canJump(nums []int) bool {
+func canJumpV3(nums []int) bool {
     return canJumpFromPosition(0, nums)
 }
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c91eb76-5e31-4845-b50b-83032c028101" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../array/105-construct-binary-tree-from-in-preorder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/105-construct-binary-tree-from-in-preorder/recursive/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/105-construct-binary-tree-from-in-preorder/recursive2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/105-construct-binary-tree-from-in-preorder/tmp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/106-construct-bindary-tree-in-post-order/recursive/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/106-construct-bindary-tree-in-post-order/recursive2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/106-construct-bindary-tree-in-post-order/recursive3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/118-pacal's-triangle/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/153-find-mininum-in-rotated-array/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/33-sorted-in-roated-array/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/78-Subset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/78-Subset/solution1_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/78-Subset/solution2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/78-Subset/solution3_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/78-Subset/solution4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/79-word-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/79-word-search/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/80-remove-duplicate-2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/80-remove-duplicate-2/solution.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/81-search-in-rotated-array/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/81-search-in-rotated-array/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/90-subset2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/90-subset2/sub_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../array/remove-duplicate/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/105-constract-binary-tree-from-preorder-inorder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/150-Evaluate-Reverse-Polish-Notation/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tree/preorder/basic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tree/preorder/recursive.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/39-40-conbination-sum/solution1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/39-40-conbination-sum/solution1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/39-40-conbination-sum/solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/39-40-conbination-sum/solution2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/55-jump-game/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../array/55-jump-game/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/55-jump-game/back-tracking.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/55-jump-game/back-tracking.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/56-merge-intervals/56-merge-intervals.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/56-merge-intervals/56-merge-intervals.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/59-spiral-matrix/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/59-spiral-matrix/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/63-unique-path-3/unique-path3.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/63-unique-path-3/unique-path3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/66-plus-one/solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/../array/66-plus-one/solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../array/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../array/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/155-min-stack/solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/155-min-stack/solution2.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go/go1.13.5" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1d9U6pEzaHj6ZehmBu4O7JSPOqX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+</project>
