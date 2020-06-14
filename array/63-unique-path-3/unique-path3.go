@@ -7,14 +7,12 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	if obstacleGrid[0][0] == 1 {
 		return 0
 	}
-
 	obstacleGrid[0][0] = 1
 	// [[1]] [[0]]
 	// 这种情况怎么办？
 	//
 	// [[0,0],[1,1],[0,0]]
 	// 这种情况也不过
-
 	row := len(obstacleGrid)
 	col := len(obstacleGrid[0])
 	for i:=1; i < row; i ++ {

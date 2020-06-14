@@ -1,6 +1,5 @@
 package main
 
-
 type record struct {
 	num int
 	min int

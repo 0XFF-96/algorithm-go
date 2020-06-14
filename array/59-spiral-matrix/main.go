@@ -1,3 +1,6 @@
+package  main
+
+
 func generateMatrix(n int) [][]int {
     if n <= 0 {
         return nil 

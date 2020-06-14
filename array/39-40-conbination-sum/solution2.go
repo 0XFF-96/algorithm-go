@@ -1,3 +1,5 @@
+package main
+
 func combinationSum(candidates []int, target int) [][]int {
     r := [][]int{}
     for i, c := range candidates {

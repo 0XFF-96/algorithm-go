@@ -1,4 +1,8 @@
-func conbinationSum(candidates []int, target) [][]int {
+package  main
+
+// 如何去重？
+//
+func conbinationSum(candidates []int, target int) [][]int {
 	if len(candidates) == 0 {
 		return nil 
 	}
@@ -8,8 +12,8 @@ func conbinationSum(candidates []int, target) [][]int {
 
 	var dfs func(candidates []int, target, curPos int) 
 
-	dfs = func(candiates []int, target, curPos int) {
-		if len(candiates) == 0 {
+	dfs = func(candidates []int, target, curPos int) {
+		if len(candidates) == 0 {
 			return 
 		}
 		if target == 0 {
@@ -17,11 +21,11 @@ func conbinationSum(candidates []int, target) [][]int {
 			// 因为引用的是函数全局变量
 			res = append(res, append([]int{}, cur...))
 		}
-		for i:=curPos; i < len(canidates);i++{
+		for i:=curPos; i < len(candidates);i++{
 			cur = append(cur, candidates[i])
 			// 这里为什么是 i 
 			// 是因为能够利用重复元素
-			dfs(candiates, tareget-canidates[i], i)
+			dfs(candidates, tareget-canidates[i], i)
 			// backtracking
 			// 弹出栈操作
 			cur = cur[:len(cur)-1]
