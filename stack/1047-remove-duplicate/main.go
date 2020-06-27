@@ -1,7 +1,5 @@
 package _047_remove_duplicate
 
-
-
 func removeDuplicates(S string) string {
 	// 递归
 	// 使用栈

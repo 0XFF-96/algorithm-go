@@ -42,12 +42,21 @@ func removeOuterParenthesesW(S string) string {
 	return S
 }
 
+// case1
+// Input: "(()())(())"
+// Output: "()()()"
 
+// case2
+// Input: "()()"
+// Output: ""
 // 太牛 B 的做法了
 // 简洁，高效
 func removeOuterParentheses(S string) string {
 	result := ""
 	counter := 0
+
+	// 开始位置很重要?
+	// 为什从 1 开始？, 而不是从零？
 	begin := 1
 	for i, s := range S {
 		if s == '(' {
@@ -79,12 +88,12 @@ func removeOuterParenthesesV2(S string) string {
 			stack += c
 		}
 		if openParan == 0 {
-
 			// 隐含条件 stack 只有两个元素时，不会加入
 			// stack['(', ')']
 			// '' = stack[1:len(stack)-1]
 			// 这个点，学到了
 			// 有点 hack
+			// 为什么从 1 开始？
 			res += stack[1:len(stack)-1]
 			stack = ""
 		}
@@ -96,7 +105,6 @@ func removeOuterParenthesesV2(S string) string {
 
 // 有点厉害了
 // 1、怎么办？
-// 2、
 func removeOuterParenthesesV3(S string) string {
 	b := strings.Builder{}
 	depth := 0

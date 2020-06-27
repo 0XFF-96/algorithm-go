@@ -3,13 +3,13 @@ collect leet-code multi-solution in go
 
 
 ### 参考项目
-
 1、https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 2、https://github.com/yangwenmai/learning-algorithms
 3、[编程百例](https://www.zybuluo.com/Gestapo/note/32082)
 4、cheer up man: https://leetcode.com/discuss/general-discussion/623011/a-guide-for-dummies-like-me !
 5、fuck algorithm 的相关题目 
-
+6、golang-算法模板：https://github.com/greyireland/algorithm-pattern
+7、算法可视化文章：https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 
 ### 练习 OJ 的不同境界
 1、能够把题目归类（关键字）

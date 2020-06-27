@@ -1,6 +1,4 @@
 package main
-
-
 func nextGreaterElement(nums1 []int, nums2 []int) []int {
 	// next greater element 的定义
 	// brute force 的解法
@@ -27,4 +25,31 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 		}
 	}
 	return ret
+}
+
+
+// 
+func nextGreaterElementV2(nums1 []int, nums2 []int) []int {
+    var result []int
+    incrementMap := make(map[int]int,len(nums2))
+    
+    for i, num2 := range nums2 {
+        var found bool
+        for _, greaterValue := range nums2[i+1:] {
+            if greaterValue > num2 {
+			 // next incremental number
+                incrementMap[num2] = greaterValue
+                found =true
+                break
+            }
+        }
+        if found == false {
+            incrementMap[num2] = -1
+        }
+    } 
+    for _, num1 := range nums1 {
+        result = append(result, incrementMap[num1])
+    }
+    
+    return result
 }

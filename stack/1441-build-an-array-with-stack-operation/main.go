@@ -1,11 +1,9 @@
 package _441_build_an_array_with_stack_operation
 
 
-
 func buildArray(target []int, n int) []string {
 	// strictly increasing
 	// only contains 1 to n
-
 	curIndex := 0
 	var stack []int
 	ret := []string{}

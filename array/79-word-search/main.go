@@ -6,7 +6,8 @@ func exist(board [][]byte, word string) bool {
 	// dfs
 	// trie 树加速
 	// 对23，28行的利用回溯剪枝和复原的讲解非常到位！
-	// The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring.
+	// The word can be constructed from letters of sequentially adjacent cell,
+	// where "adjacent" cells are those horizontally or vertically neighboring.
 	// 那个小岛的题目（200）在思路上很类似
 	// 防止revisit太精妙了
 
@@ -56,6 +57,7 @@ func search(row, col , d int, word string, board [][]byte) bool {
 
 // 解决这题超时的办法之一
 // 进行剪枝
-//                     temp:=board[x][y]//这题注意，如果把四个可能方向都直接并列写出来全部可能性都试完，会超时，用||意味着一个个方向去试，有一个方向成了就OK，这样运算步骤少了不会超时
-//                    board[x][y]='$'
+// temp:=board[x][y]//这题注意，如果把四个可能方向都直接并列写出来全部可能性都试完，
+// 会超时，用||意味着一个个方向去试，有一个方向成了就OK，这样运算步骤少了不会超时
+// board[x][y]='$'
 

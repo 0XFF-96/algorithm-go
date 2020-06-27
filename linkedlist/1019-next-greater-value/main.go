@@ -31,7 +31,6 @@ func nextLargerNode(head *ListNode) int {
 // monotonic stack
 // 比我小的元素不可能构成一个解法
 //
-
 // 从上一个版本中迭代
 // 如何能够快速查找 nextLargerNode
 // 对于这个点进行相关优化才行

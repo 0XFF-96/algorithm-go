@@ -16,7 +16,8 @@ func validate(preorder []string, i *int) bool {
         return true
 	}
 	
-	*i += 1   // i 的明确含义是？
+    *i += 1   
+    // i 的明确含义是？
 	// 不太可能用在生产环境。
     left := validate(preorder, i)
     right := validate(preorder, i)
