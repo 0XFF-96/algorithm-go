@@ -1,7 +1,10 @@
 
 
 // 使用降维的思维模式
-// 
+// Given a non-negative integer num represented as a string, 
+// remove k digits from the number so that the new number is the smallest possible
+// Input: num = "1432219", k = 3
+// Output: "1219"
 func removeKdigits(num string, k int) string {
 	res := []rune{}
 

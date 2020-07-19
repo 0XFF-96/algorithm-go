@@ -17,7 +17,7 @@ func validateStackSequences(pushed []int, popped []int) bool {
 	stack := []int{}
 	
 	// 为什么是从 pushed 栈开始，
-	而不是从 poped 栈开始解题目？
+	// 而不是从 poped 栈开始解题目？
     
     for _, s := range pushed {
         stack = append(stack, s)

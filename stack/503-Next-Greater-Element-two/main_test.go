@@ -49,3 +49,28 @@ func nextGreaterElementsV2(nums []int) []int {
     return res 
 }
 
+
+// 这里没有 rolling update 数组的概念
+func nextGreaterElementsV3(nums []int) []int {
+	if len(nums) == 0 {
+		return []int{}
+	}
+	result := make([]int, len(nums))
+	for i := 0; i < len(nums); i++ {
+		result[i] = -1
+	}
+	arr := append([]int{}, nums...)
+	arr = append(arr, nums[:len(nums)-1]...)
+	stack := []int{}
+	for i := 0; i < len(arr); i++ {
+		num := arr[i]
+		for len(stack) > 0 && arr[stack[len(stack)-1]] < num {
+			if stack[len(stack)-1] < len(nums) {
+				result[stack[len(stack)-1]] = num
+			}
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, i)
+	}
+	return result
+}

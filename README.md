@@ -1,7 +1,6 @@
 # algorithm-go
 collect leet-code multi-solution in go
 
-
 ### 参考项目
 1、https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 2、https://github.com/yangwenmai/learning-algorithms
@@ -26,7 +25,11 @@ collect leet-code multi-solution in go
 
 ### 总结性文章
 1、https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
+2、参考这位老哥写的总结性文章，https://halfrost.com/linked_list/
+3、
 
 
 ### 资源
 1、动态规划 20 题目:https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
+2、Leetcode 刷题顺序。 https://www.zhihu.com/question/36738189/answer/908664455
+3、编程进阶。https://www.zhihu.com/question/356351510/answer/1148885728
