@@ -27,9 +27,14 @@ collect leet-code multi-solution in go
 1、https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
 2、参考这位老哥写的总结性文章，https://halfrost.com/linked_list/
 3、
-
-
 ### 资源
-1、动态规划 20 题目:https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
+1、动态规划 20 题目。 https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
 2、Leetcode 刷题顺序。 https://www.zhihu.com/question/36738189/answer/908664455
 3、编程进阶。https://www.zhihu.com/question/356351510/answer/1148885728
+4、公司编程高频题目。 https://github.com/afatcoder/LeetcodeTop
+5、https://zhuanlan.zhihu.com/p/115283533
+
+6、https://zhuanlan.zhihu.com/p/149409633
+7、刷题、https://www.zhihu.com/question/399923003/answer/1300151492
+9、刷 leetcode 练习题目。 https://zhuanlan.zhihu.com/p/149409633
+10、https://www.zhihu.com/question/399923003/answer/1300151492 go 语言进阶。
