@@ -1,7 +1,6 @@
 ### 题目属于 LCP
 
 
-
 ### 三种方法
 1. Horizontal scanning
 2. Vertical scanning
