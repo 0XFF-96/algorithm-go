@@ -22,6 +22,7 @@ collect leet-code multi-solution in go
 7-a、能够根据测试用例，用图形化的方式动态展示代码做的事情
 8、隔开一个星期，再重新回顾代码是，能够想出题目的描述以及 Limitation 
 9、能够改写题目， follow-up question
+10、重新想另外一种解题方式
 
 ### 总结性文章
 1、https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
@@ -38,3 +39,8 @@ collect leet-code multi-solution in go
 7、刷题、https://www.zhihu.com/question/399923003/answer/1300151492
 9、刷 leetcode 练习题目。 https://zhuanlan.zhihu.com/p/149409633
 10、https://www.zhihu.com/question/399923003/answer/1300151492 go 语言进阶。
+
+
+### 算法刷题模板
+- https://github.com/greyireland/algorithm-pattern
+- 

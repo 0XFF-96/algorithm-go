@@ -1,5 +1,4 @@
-
-
+package main 
 
 func findLengthOfLCIS(nums []int) int {
     ans := 0 

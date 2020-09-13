@@ -1,3 +1,4 @@
+package main 
 
 import "sort"
 func maximumProduct(nums []int) int {
@@ -16,9 +17,6 @@ func max(a, b int) int {
         return b 
     }
 }
-
-
-
 // single scan 
 // 找出 min1, min2, min3
 // 找出 max1, max2, max3 
