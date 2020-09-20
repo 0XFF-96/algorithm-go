@@ -9,6 +9,7 @@ collect leet-code multi-solution in go
 5、fuck algorithm 的相关题目 
 6、golang-算法模板：https://github.com/greyireland/algorithm-pattern
 7、算法可视化文章：https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+8、https://books.halfrost.com/leetcode/
 
 ### 练习 OJ 的不同境界
 1、能够把题目归类（关键字）
