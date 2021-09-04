@@ -28,9 +28,6 @@ collect leet-code multi-solution in go
 10、重新想另外一种解题方式
 
 ### 总结性文章
-1、https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
-
-2、参考这位老哥写的总结性文章，https://halfrost.com/linked_list/
 
 
 ### 资源
@@ -63,6 +60,9 @@ collect leet-code multi-solution in go
 - 7、算法可视化文章：https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 - 8、https://books.halfrost.com/leetcode/
 
+- https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
+
+- 参考这位老哥写的总结性文章，https://halfrost.com/linked_list/
 
 ### 算法刷题模板
 - https://github.com/greyireland/algorithm-pattern
