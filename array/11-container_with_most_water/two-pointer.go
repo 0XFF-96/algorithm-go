@@ -7,10 +7,10 @@ func maxArea(height []int) int {
     
     for l < r {
         // 为什么要减一？
-        // r-1 是距离
+        // r - 1 是距离
         // 是 right - left 
         // 不是 r - 1 
-        maxarea = max(maxarea, min(height[l], height[r]) * ( r -l))
+        maxarea = max(maxarea, min(height[l], height[r]) * (r -l))
         
         if height[l] < height[r] {
             l++
