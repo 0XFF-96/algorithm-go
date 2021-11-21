@@ -1,10 +1,4 @@
-package preorder
-
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
+package tree
 
 
 // 前序遍历的递归于非递归算法
@@ -23,6 +17,7 @@ func preorderTraversal2(root *TreeNode) []int {
 			cur = cur.Right
 			continue
 		}
+
 
 		ret = append(ret, cur.Val)
 		stack = append(stack, cur)
@@ -54,3 +49,20 @@ func preorderTraversal(root *TreeNode) []int {
 	return res
 }
 
+
+
+
+// 值得学习的地方
+// 1、学习如何使用 reference 在这个例子里面
+func preorderTraversalWithRecursive(root *TreeNode) []int {
+	var result []int
+	preorder(root,&result)
+	return result
+}
+func preorder(root *TreeNode,output *[]int) {
+	if root != nil {
+		*output = append(*output,root.Val)
+		preorder(root.Left,output)
+		preorder(root.Right,output)
+	}
+}
