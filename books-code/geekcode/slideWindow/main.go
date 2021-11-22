@@ -1,7 +1,7 @@
 package slideWindow
 
 // 滑动窗口的算法
-func maxSLidingWindow(nums []int, k int) []int{
+func maxSLidingWindow(nums []int, k int) []int {
 	var result []int
 
 	if len(nums) == 0 {

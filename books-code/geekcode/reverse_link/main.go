@@ -10,6 +10,7 @@ type LinkNode struct {
 	val int
 	next *LinkNode
 }
+
 func makeLinkFromSlice(s []int) *LinkNode{
 	if len(s) == 0 {
 		return nil
