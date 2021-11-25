@@ -1,7 +1,5 @@
 package geekcode
 
-
-
 //func (s *stack)push(n int) {
 //	s = append(s, n)
 //}

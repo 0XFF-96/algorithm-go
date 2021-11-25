@@ -23,7 +23,6 @@ func isPalindrome(head *ListNode) bool {
 	}
 	// 找出 link list 的中点
 	// 存为一个数组
-	//
 	// could you do it in O(n) time O(1) space?
 	// reserve list
 	// and compare it with original

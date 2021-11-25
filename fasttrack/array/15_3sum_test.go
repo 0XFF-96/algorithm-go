@@ -5,8 +5,6 @@ import (
 )
 
 // 没有能够 AC
-// Shame !
-// Shame !
 // https://leetcode.com/problems/3sum/
 func threeSum(nums []int) [][]int {
 	if len(nums) == 0 {

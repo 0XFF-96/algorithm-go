@@ -2,8 +2,6 @@ package array
 
 
 // 不知道怎么做
-//
-
 // 看看这个老哥的出事话方法
 // https://leetcode.com/problems/reshape-the-matrix/discuss/292585/Golang-easy-understand
 //

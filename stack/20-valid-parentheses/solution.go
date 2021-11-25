@@ -1,4 +1,4 @@
-package _0_valid_parentheses
+package main
 
 
 // https://leetcode.com/problems/valid-parentheses/discuss/9177/Golang-solution

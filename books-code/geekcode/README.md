@@ -22,5 +22,5 @@
 // https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247484505&idx=1&sn=4c1c056dd4852c3b4b1ead51c90a9b2d&chksm=fa0e6bd8cd79e2ce8188dcdd8843a5d071248906bfb8971c62d513dbd69b816acc191a78e4b2&scene=21#wechat_redirect
 
 // daily work 
-// 11-19.反转链表: 预先设置变量，然后迭代进行。 对于停止条件的处理， 应该返回哪个节点回去？
-// 11-20.
+// 11-19.反转链表: 预先设置变量，然后迭代进行。 
+// 对于停止条件的处理， 应该返回哪个节点回去？

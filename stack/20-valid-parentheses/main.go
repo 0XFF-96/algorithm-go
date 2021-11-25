@@ -1,8 +1,14 @@
-package _0_valid_parentheses
+package main
 
+// setup 过程
+//GOROOT=/Users/lijinrui/go/go1.13.5 #gosetup
+//GOPATH=/Users/lijinrui/go #gosetup
+///Users/lijinrui/go/go1.13.5/bin/go build -o /private/var/folders/09/r6f6jypj0f9bj7rz2qpv6jyr0000gn/T/___go_build_main_go /Users/lijinrui/algorithm-go/stack/20-valid-parentheses/main.go #gosetup
+///private/var/folders/09/r6f6jypj0f9bj7rz2qpv6jyr0000gn/T/___go_build_main_go #gosetup
 
-
-
+func main() {
+	isValid("s")
+}
 
 func isValid(s string) bool {
 	if len(s) == 0 {

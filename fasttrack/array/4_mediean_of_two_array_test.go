@@ -4,15 +4,11 @@ package array
 // 非常难和重点的题目
 // 边界条件特别多
 // https://www.youtube.com/watch?v=LPFhl65R7ww&t=5s
-//
-
 
 // 周末补一下这个吧
-//
 // 补课： 1、permuation a string https://www.youtube.com/watch?v=GCm7m5671Ps
 // 2、https://www.youtube.com/watch?v=0NAASclUm4k 【数学问题】
 // 3、https://www.youtube.com/watch?v=KukNnoN-SoY
-
 
 //
 //Free 5-Day Mini-Course: https://backtobackswe.com

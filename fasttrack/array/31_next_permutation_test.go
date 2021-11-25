@@ -17,10 +17,8 @@ package array
 // how to prove it is correct? usually if you cannot prove its correctness,
 // the algorithm may not work for the corner cases.....
 
-
 // 这道题不会做...
 // 和下面的代码比较清晰，和视频里面的差不多。
-//
 func nextPermutation(nums []int) {
 	if len(nums) == 0 {
 		return

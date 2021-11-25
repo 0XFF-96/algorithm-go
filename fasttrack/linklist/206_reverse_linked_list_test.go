@@ -23,7 +23,6 @@ func reverseList(head *ListNode) *ListNode {
 
 
 // 递归方法
-//
 // 分析一下栈调用
 // 为什么可以这样做？
 // 是错的？

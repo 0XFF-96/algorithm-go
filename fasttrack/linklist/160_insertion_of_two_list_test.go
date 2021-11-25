@@ -7,9 +7,12 @@ package linklist
 
 // Here's my solution which is like approach 3 but a little different.
 // I store the size of ListA and ListB as len1 and len2.
-// Then I reset the pointers to headA and headB and find the difference between len1 and len2,
-// and then let the pointer of the longer list proceed by the difference between len1 and len2.
-// Finally, traverse through the lists again, the intersection node can be easily found
+// Then I reset the pointers to headA and headB
+// and find the difference between len1 and len2,
+// and then let the pointer of the longer list proceed
+// by the difference between len1 and len2.
+// Finally, traverse through the lists again,
+// the intersection node can be easily found
 
 //
 // Runtime: 40 ms, faster than 83.44% of Go online submissions for Intersection of Two Linked Lists.

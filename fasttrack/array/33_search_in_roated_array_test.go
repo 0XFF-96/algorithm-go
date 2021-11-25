@@ -86,8 +86,7 @@ func search(nums []int, target int) int {
 		// 4. 递增，中间部分相同，并从中截断
 		// 判断哪一侧是 增加的
 		if nums[l] <= nums[mid] {
-			// 这里的条件需要调换一下顺序
-			// 为了看的人方便。
+			// 这里的条件需要调换一下顺序, 为了看的人方便。
 			//  target < nums[mid] && target >= nums[l]
 			if target >= nums[l] && target < nums[mid] {
 				r = mid - 1
@@ -113,8 +112,6 @@ func search(nums []int, target int) int {
 
 
 // 这个好想清晰一点
-
-
 func _binSearch(a []int, lo, hi, t int) int {
 	r := sort.SearchInts(a[lo:hi], t)
 	if r == hi-lo || a[r+lo] != t {

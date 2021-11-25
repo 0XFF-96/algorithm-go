@@ -43,7 +43,7 @@ func printLink(link *LinkNode){
 		link = link.next
 	}
 }
-
+// 递归版本的 reverseLink , 利用了栈的特点
 func reverseLink(link *LinkNode) *LinkNode {
 	if link == nil {
 		return nil

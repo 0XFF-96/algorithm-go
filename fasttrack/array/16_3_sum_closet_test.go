@@ -5,9 +5,6 @@ package array
 //
 
 // // https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/discuss/535783/Go-golang-BFS-and-DFS-solutions
-
-
-
 // 这种方法清晰一点
 //
 //func threeSumClosest(nums []int, target int) int {

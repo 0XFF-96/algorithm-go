@@ -19,7 +19,6 @@ func combinationSum(candidates []int, target int) [][]int {
 	// 什么条件下，还能继续搜索？
 	// target - cur > pick
 	// 怎么才算是遍历完了这个数字
-	//
 
 	// 想到一个方法
 	// cur = anyone in candidates []int
@@ -50,10 +49,8 @@ func combinationSum(candidates []int, target int) [][]int {
 // 组合并不需要 set 去重
 // 利用【组合】的模板来实现
 // 1、什么时候结束 2、如何实现能取重复元素
-//
 // https://leetcode.com/problems/combination-sum/discuss/432145/Go-golang-0ms-four-solutions
 // 四种算法
-//
 
 // 这里有启发的意义
 // https://leetcode.com/problems/combination-sum/discuss/455588/Golang-DFS-solution
@@ -86,7 +83,5 @@ func combinationSumV1(candidates []int, target int) [][]int {
 	dfs(candidates, target, 0)
 	return ans
 }
-
-// 看看怎么 combination 怎么做。
-// 各种变形。
-//
+// 看看怎么 combination 怎么做
+// 各种变形

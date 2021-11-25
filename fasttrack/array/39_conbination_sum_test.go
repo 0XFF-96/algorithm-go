@@ -6,8 +6,6 @@ import (
 	"testing"
 )
 
-
-
 func TestCombinationSum(t *testing.T){
 	candidates := []int{2, 3, 6, 7}
 	// target := 7

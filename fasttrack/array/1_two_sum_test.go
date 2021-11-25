@@ -3,7 +3,6 @@ package array
 
 // 需要写出三种解法
 // 优化的思想：固定某个变动参数。
-
 // one-pass solution
 func twoSum(nums []int, target int) []int {
 	if len(nums) ==0 {
@@ -19,3 +18,5 @@ func twoSum(nums []int, target int) []int {
 	}
 	return nil
 }
+
+// solution 2 

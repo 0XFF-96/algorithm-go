@@ -1,7 +1,5 @@
 package array
 
-
-
 // AC: 一次
 // 看看参考答案如何写的.
 func searchRange(nums []int, target int) []int {
