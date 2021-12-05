@@ -68,3 +68,12 @@ collect leet-code multi-solution in go
 ### 算法刷题模板
 - https://github.com/greyireland/algorithm-pattern
 
+1、go 相关数据结构， https://github.com/Workiva/go-datastructures 
+2、go, 题目集合。 https://github.com/lifei6671/interview-go
+3、系统设计题目， https://github.com/soulmachine/system-design 
+4、golang 问题， https://github.com/KeKe-Li/data-structures-questions 
+5、top-quesiton， https://github.com/afatcoder/LeetcodeTop 
+6、https://github.com/shgopher/GOFamily
+7、https://leetcode-cn.com/study-plan/algorithms/?progress=myeios1 
+8、https://talkgo.org/t/topic/1877
+9、《labuladong 的算法小抄》和《leetcode 101》
