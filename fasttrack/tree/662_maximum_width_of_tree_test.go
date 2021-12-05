@@ -13,6 +13,7 @@ package tree
 // 总结：
 // 这是一题找规律，利用树节点，之间信息计算的题目.
 // 归类于树的性质：树高、树宽、树的最大深度、树的最短长度、pathSum 等题目
+// position value
 
 // The main idea in this question is to give each node a position value.
 	// If we go down the left neighbor, then position -> position * 2;

@@ -1,9 +1,6 @@
 package tree
 
-
-
 // 看答案一次 AC
-//
 func trimBST(root *TreeNode, L int, R int) *TreeNode {
 	if root == nil {
 		return nil

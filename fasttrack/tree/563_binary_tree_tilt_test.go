@@ -6,7 +6,6 @@ import (
 	"testing"
 )
 
-
 // https://www.youtube.com/watch?v=-41E1g8NoMM
 // 理解题目意思
 // all 【 left subtree node values 】and the sum of 【all right subtree node values】

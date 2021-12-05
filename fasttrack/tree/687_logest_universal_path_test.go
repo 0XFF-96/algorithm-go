@@ -1,19 +1,12 @@
 package tree
 
-
-//
 //
 // 二叉树中有一种解法：This path may or may not pass through the root.
 // 这题都是用递归做，而且都在返回都时候，有一个特点。
-//
-//
-
-
-
+// 
 // 一定要联想到
 // 如果求一颗树的所有 path 怎么求？
 // path sum
-//
 
 
 // 相关题目：
@@ -93,10 +86,7 @@ func longestUnivaluePathAC(root *TreeNode) int {
 // Complexity Analysis
 
 // Time Complexity: O(N)O(N), where NN is the number of nodes in the tree. We process every node once.
-
 // Space Complexity: O(H)O(H), where HH is the height of the tree. Our recursive call stack could be up to HH layers deep.
-
-
 // https://leetcode.com/problems/longest-univalue-path/discuss/167989/Golang-bottom-up-recursion-solution
 // 什么是 tree 的 bottom-up solution ?
 // 尝试解一下...

@@ -17,8 +17,6 @@ import (
 // 非递归解法
 //
 // follow-up-Question: 你能否想出非递归解法
-
-
 func TestPrintTree(t *testing.T){
 	// tree1 := initTree()
 	// mathutil.Max()

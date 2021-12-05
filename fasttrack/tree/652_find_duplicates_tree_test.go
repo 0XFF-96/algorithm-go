@@ -9,9 +9,9 @@ import (
 // 有什么思维方法可以解决
 // 提示点：序列化、map、相同结构
 
+
 // 快速查找一个树的结构是否在里面。 map
 //
-
 // 视频1：
 // https://www.youtube.com/watch?v=nxHBg7hm0rs [已看]
 // https://www.youtube.com/watch?v=JLK92dbTt8k [已看]

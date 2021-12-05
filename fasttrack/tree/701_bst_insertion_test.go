@@ -7,9 +7,6 @@ package tree
 
 // 1、视频
 // 2、
-
-
-
 // BST insert: https://www.youtube.com/watch?v=bmaeYtlO2OE
 func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	if root == nil {

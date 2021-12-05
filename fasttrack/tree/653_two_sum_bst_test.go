@@ -17,8 +17,6 @@ func TestFindTarget(t *testing.T){
 	r := findTarget(nodes, 3)
 	t.Log(r)
 }
-
-
 // ac
 func findTarget(root *TreeNode, k int) bool {
 	m := map[int]struct{}{}
