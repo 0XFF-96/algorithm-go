@@ -1,6 +1,4 @@
-### 链表
-
-
+### 链表 
 #### 递归反转链表
 ```
 // 单链表节点的结构
@@ -10,7 +8,6 @@ public class ListNode {
     ListNode(int x) { val = x; }
 }
 ```
-
 
 ```
 ListNode reverse(ListNode head) {

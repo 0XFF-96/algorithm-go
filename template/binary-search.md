@@ -1,4 +1,3 @@
-
 因为我们初始化 right = nums.length
 所以决定了我们的「搜索区间」是 [left, right)
 所以决定了 while (left < right)

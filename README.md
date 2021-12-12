@@ -77,3 +77,6 @@ collect leet-code multi-solution in go
 7、https://leetcode-cn.com/study-plan/algorithms/?progress=myeios1 
 8、https://talkgo.org/t/topic/1877
 9、《labuladong 的算法小抄》和《leetcode 101》
+10、GO-question, https://golang.design/go-questions/map/unordered/
+
+https://speakerd.s3.amazonaws.com/presentations/10ac0b1d76a6463aa98ad6a9dec917a7/GopherCon_v10.0.pdf
