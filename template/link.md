@@ -57,3 +57,66 @@ void traverse(ListNode head) {
     // 后序遍历代码
 }
 ```
+
+type List struct {
+    next *node 
+}
+
+type node struct {
+    value int 
+}
+
+// 第一个
+
+// 
+// 3 - 5 - 6 - 2
+// 5 - 3 
+
+
+// 5- 6 保存 tmp 
+// 5 - 3 
+// 3 - tmp 
+
+
+
+//
+// 3 - 6 
+// 5 - 3 
+// 迭代
+func reverseListV1(l *List) *List {
+    if l == nil {
+        return nil 
+    }
+    dummy := l 
+    for dummy.next != nil {
+        tmp := dummy.next.next 
+        dummy.next = dummy
+        next.next = tmp 
+        dummy = dummy.next 
+    }
+    return dummy
+}
+
+// 递归
+// 栈， 
+func reverseListV2(head *List) *List {
+    if head.next == nil {
+        return head   // 
+    }
+    last = reverseListV2(l)
+    head.next.next =  head  
+    head.next = nil 
+    return last
+}
+
+
+
+// 3 - 5 - 6 - 2
+
+// 1. 
+3 - reverseListV2([5, 6, 2 ])
+
+// 
+// 5 , 6 , 2 
+// 6- 2
+// 6 - 
