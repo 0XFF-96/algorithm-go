@@ -1,3 +1,7 @@
+# array 
+
+# 大纲
+
 ### 前缀和简化计算
 
 // 优化版本
@@ -226,3 +230,17 @@ int removeDuplicates(int[] nums) {
     // 数组长度为索引 + 1
     return slow + 1;
 }
+
+
+
+### 递归遍历数组
+
+```
+void traverse(int[] nums, int index) {
+    if (index == nums.length) {
+        return;
+    }
+    System.out.println(nums[index]);
+    traverse(nums, index + 1);
+}
+```

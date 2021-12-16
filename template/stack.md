@@ -43,3 +43,15 @@ vector<int> nextGreaterElements(vector<int>& nums) {
     return res;
 }
 
+### 最大栈【不懂】
+
+```
+class FreqStack {
+    // 记录 FreqStack 中元素的最大频率
+    int maxFreq = 0;
+    // 记录 FreqStack 中每个 val 对应的出现频率，后文就称为 VF 表
+    HashMap<Integer, Integer> valToFreq = new HashMap<>();
+    // 记录频率 freq 对应的 val 列表，后文就称为 FV 表
+    HashMap<Integer, Stack<Integer>> freqToVals = new HashMap<>();
+}
+```

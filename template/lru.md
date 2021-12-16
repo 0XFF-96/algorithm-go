@@ -1,5 +1,55 @@
 ### LRU template 
 
+### 自然语言描述
+
+双链表中实现的方法：
+	链表初始化
+	添加元素到双链表尾部（同时意味着该元素最近使用过）
+	删除某个结点（非头结点）
+	删除并返回头结点（意味着移除最久未使用过的元素）
+	返回链表当前长度
+LRU 缓存中的方法
+	初始化，get，put方法
+	设置某元素最近已使用makeRecently（原map中已有该元素）
+	添加最近使用过的元素addRecently（原map中不存在该键值对，新元素）
+	删除某个key对应的元素
+	删除最久未使用过的元素 2.中的方法也可以直接在get和put方法中实现，可以减少部分冗余
+
+### 简短版 LRU 
+
+type LRUCache struct {
+    size int
+    capacity int
+    cache map[int]*DLinkedNode
+    head, tail *DLinkedNode
+}
+
+type DLinkedNode struct {
+    key, value int
+    prev, next *DLinkedNode
+}
+
+func initDLinkedNode(key, value int) *DLinkedNode {
+    return &DLinkedNode{
+        key: key,
+        value: value,
+    }
+}
+
+func Constructor(capacity int) LRUCache {
+    l := LRUCache{
+        cache: map[int]*DLinkedNode{},
+        head: initDLinkedNode(0, 0),
+        tail: initDLinkedNode(0, 0),
+        capacity: capacity,
+    }
+    l.head.next = l.tail
+    l.tail.prev = l.head
+    return l
+}
+
+
+### From golang-snippet 
 
 	keyLru struct {
 		// if would be better if we use capacity as name
