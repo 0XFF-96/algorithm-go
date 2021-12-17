@@ -2,6 +2,8 @@
 
 # 大纲
 
+### 前缀和数组的构建
+
 ### 前缀和简化计算
 
 // 优化版本
@@ -139,7 +141,7 @@ class PrefixSum {
 }
 
 
-### 差分数组
+### 差分数组核心代码
 
 int[] diff = new int[nums.length];
 // 构造差分数组
@@ -155,8 +157,11 @@ for (int i = 1; i < diff.length; i++) {
     res[i] = res[i - 1] + diff[i];
 }
 
-# 这样构造差分数组 diff，就可以快速进行区间增减的操作，如果你想对区间 nums[i..j] 的元素全部加 3，那么只需要让 diff[i] += 3，然后再让 diff[j+1] -= 3 即可
+```
+这样构造差分数组 diff，就可以快速进行区间增减的操作，如果你想对区间 nums[i..j] 的元素全部加 3，那么只需要让 diff[i] += 3，然后再让 diff[j+1] -= 3 即可
+```
 
+### 差分数组工具类
 // 差分数组工具类
 class Difference {
     // 差分数组
@@ -193,8 +198,10 @@ class Difference {
     }
 }
 
-
 ### 环形数组
+
+- 能否用 【图】把这个过程划出来？
+- ？
 
 vector<int> nextGreaterElements(vector<int>& nums) {
     int n = nums.size();
@@ -231,10 +238,9 @@ int removeDuplicates(int[] nums) {
     return slow + 1;
 }
 
-
-
 ### 递归遍历数组
 
+递归数组有什么用？
 ```
 void traverse(int[] nums, int index) {
     if (index == nums.length) {

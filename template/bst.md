@@ -1,6 +1,9 @@
 ### BST 树🌲
 ### BST 树的相关特点
 
+- 我在 邓俊辉老师版本的教程，这里面对 BST 的描述非常详尽。
+- 
+
 ### 模板
 void BST(TreeNode root, int target) {
     if (root.val == target)
@@ -40,7 +43,7 @@ TreeNode searchBST(TreeNode root, int target);
     return left != null ? left : right;
 }
 
-### 优化版本
+### 优化版本， BST 搜索和查找问题
 TreeNode searchBST(TreeNode root, int target) {
     if (root == null) {
         return null;
@@ -144,4 +147,7 @@ void traverse(TreeNode root) {
     traverse(root.left);
     traverse(root.right);
 }
+
+
+
 

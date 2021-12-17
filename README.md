@@ -1,7 +1,7 @@
 # algorithm-go
 collect leet-code multi-solution in go
 
-### 练习 OJ 的不同境界
+### 练习 OJ/Leetcode 的不同境界
 
 1、能够把题目归类（关键字）
 
@@ -27,8 +27,11 @@ collect leet-code multi-solution in go
 
 10、重新想另外一种解题方式
 
-### 总结性文章
+11、能否把题目的核心思想和结构单独抽象出来，用于解决不同类别的问题
 
+12、泛化题目
+
+### 总结性文章
 
 ### 资源
 1、动态规划 20 题目。 https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/

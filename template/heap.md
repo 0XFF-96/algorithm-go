@@ -1,5 +1,11 @@
 
+### heap 堆
 
+tag: #堆 #优先级队列 #堆排序
+
+### 优先级队列数据结构
+
+```
 public class MaxPQ
     <Key extends Comparable<Key>> {
     // 存储元素的数组
@@ -95,7 +101,16 @@ public Key delMax() {
     return max;
 }
 
+```
 
+
+
+### golang 版本优先级数据结构
+
+- 核心代码是什么？
+- 核心模板是什么？
+
+```
 // golang contianer 容器里面的堆实现。
 // golang heap 
 
@@ -166,3 +181,5 @@ func Remove(h Interface, i int) interface{} {
 	}
 	return h.Pop()
 }
+
+```

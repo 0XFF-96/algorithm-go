@@ -1,3 +1,7 @@
+### 二分搜索核心思想
+
+tag: #二分查找 #泛化二分查找 #
+
 因为我们初始化 right = nums.length
 所以决定了我们的「搜索区间」是 [left, right)
 所以决定了 while (left < right)
@@ -11,6 +15,8 @@
 所以最后无论返回 left 还是 right，必须减一
 对于寻找左右边界的二分搜索，常见的手法是使用左闭右开的「搜索区间」，我们还根据逻辑将「搜索区间」全都统一成了两端都闭，便于记忆，只要修改两处即可变化出三种写法：
 
+
+### 代码
 int binary_search(int[] nums, int target) {
     int left = 0, right = nums.length - 1; 
     while(left <= right) {
@@ -96,4 +102,8 @@ int solution(int[] nums, int target) {
 }
 
 // https://labuladong.gitee.io/algo/2/21/59/
+
+
+
+
 
