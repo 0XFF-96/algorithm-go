@@ -16,6 +16,12 @@ tag: #二分查找 #泛化二分查找 #
 对于寻找左右边界的二分搜索，常见的手法是使用左闭右开的「搜索区间」，我们还根据逻辑将「搜索区间」全都统一成了两端都闭，便于记忆，只要修改两处即可变化出三种写法：
 
 
+
+
+### 难点
+- 分割数组的最大值， https://labuladong.gitee.io/algo/2/21/59/ 。 
+
+
 ### 代码
 int binary_search(int[] nums, int target) {
     int left = 0, right = nums.length - 1; 
@@ -107,3 +113,39 @@ int solution(int[] nums, int target) {
 
 
 
+
+
+### 二分搜索代码的泛化
+
+- 如何对二分搜索的代码进行泛化？
+```
+// 函数 f 是关于自变量 x 的单调函数
+int f(int x) {
+    // ...
+}
+
+// 主函数，在 f(x) == target 的约束下求 x 的最值
+int solution(int[] nums, int target) {
+    if (nums.length == 0) return -1;
+    // 问自己：自变量 x 的最小值是多少？
+    int left = ...;
+    // 问自己：自变量 x 的最大值是多少？
+    int right = ... + 1;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(mid) == target) {
+            // 问自己：题目是求左边界还是右边界？
+            // ...
+        } else if (f(mid) < target) {
+            // 问自己：怎么让 f(x) 大一点？
+            // ...
+        } else if (f(mid) > target) {
+            // 问自己：怎么让 f(x) 小一点？
+            // ...
+        }
+    }
+    return left;
+}
+
+```
