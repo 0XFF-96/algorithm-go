@@ -1,4 +1,6 @@
-### 常见数据结构 和 相关操作
+### 常见数据结构 和 inteface 相关操作（自然语言描述）
+
+### 大概
 
 #### 循环队列
 type CircularQueue struct {

@@ -1,3 +1,11 @@
+### 滑动窗口 slide window
+
+review: 1
+
+### 大纲
+
+### 核心算法代码
+
 int left = 0, right = 0;
 
 while (right < s.size()) {
@@ -12,6 +20,7 @@ while (right < s.size()) {
     }
 }
 
+### 滑动窗口算法框架
 
 /* 滑动窗口算法框架 */
 void slidingWindow(string s, string t) {
@@ -70,3 +79,4 @@ func maxSlidingWindow(nums []int, k int) []int{
 	return result
 }
 ```
+
