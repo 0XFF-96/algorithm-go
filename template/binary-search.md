@@ -21,6 +21,9 @@ tag: #二分查找 #泛化二分查找 #
 ### 难点
 - 分割数组的最大值， https://labuladong.gitee.io/algo/2/21/59/ 。 
 
+### 如何将二分搜索的代码进行泛化？
+
+- 函数 f 是关于自变量 x 的单调函数
 
 ### 代码
 int binary_search(int[] nums, int target) {
@@ -108,6 +111,11 @@ int solution(int[] nums, int target) {
 }
 
 // https://labuladong.gitee.io/algo/2/21/59/
+
+
+
+
+
 
 
 

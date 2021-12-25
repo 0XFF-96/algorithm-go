@@ -31,7 +31,7 @@ collect leet-code multi-solution in go
 
 12、泛化题目
 
-### 总结性文章
+# 总结性文章
 
 ### 资源
 1、动态规划 20 题目。 https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/
@@ -79,7 +79,8 @@ collect leet-code multi-solution in go
 6、https://github.com/shgopher/GOFamily
 7、https://leetcode-cn.com/study-plan/algorithms/?progress=myeios1 
 8、https://talkgo.org/t/topic/1877
-9、《labuladong 的算法小抄》和《leetcode 101》
-10、GO-question, https://golang.design/go-questions/map/unordered/
+9、《labuladong 的算法小抄》
+10、《leetcode 101》 【✅】
+11、GO-question, https://golang.design/go-questions/map/unordered/
 
 https://speakerd.s3.amazonaws.com/presentations/10ac0b1d76a6463aa98ad6a9dec917a7/GopherCon_v10.0.pdf

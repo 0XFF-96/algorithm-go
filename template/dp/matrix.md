@@ -1,3 +1,6 @@
+# 利用数组，将动态规划的问题降维思考
+
+tag: #matric #dynamic 
 
 ### 下降路径最小和
 
@@ -29,3 +32,4 @@ int min(int a, int b, int c) {
     return Math.min(a, Math.min(b, c));
 }
 ```
+

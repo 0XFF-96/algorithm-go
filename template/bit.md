@@ -2,10 +2,10 @@
 
 资源
 - http://graphics.stanford.edu/~seander/bithacks.html#ReverseParallel 。 
-- 
-
 
 ### 计算汉明距离
+
+- 什么是汉明距离？
 
 ```
 int hammingWeight(int n) {

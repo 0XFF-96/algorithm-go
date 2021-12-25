@@ -8,6 +8,9 @@
     - 二叉树最小高度，不能用
     - 解开密码锁的最小次数
 
+- 图是一个稀疏矩阵或者是一个稠密的矩阵的时候。 
+- BFS 和 DFS 的递归和迭代算法。
+
 ### 核心算法代码
 
 - bfs 
@@ -18,7 +21,7 @@ int BFS(Node start, Node target) {
     Queue<Node> q; // 核心数据结构
     Set<Node> visited; // 避免走回头路
     
-    q.offer(start); // 将起点加入队列
+    q.offer(start); // 将起点加入【队列】
     visited.add(start);
     int step = 0; // 记录扩散的步数
 

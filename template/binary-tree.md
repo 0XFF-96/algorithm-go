@@ -1,5 +1,9 @@
 ### 二叉树
 
+### 二叉树的遍历框架
+
+- 递归和迭代的解法都需要能够写得出来。 
+
 /* 二叉树遍历框架 */
 void traverse(TreeNode root) {
     // 前序遍历
@@ -8,6 +12,7 @@ void traverse(TreeNode root) {
     traverse(root.right)
     // 后序遍历
 }
+
 
 ### 前序、中序、后序遍历的本质
 
