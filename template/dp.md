@@ -45,3 +45,45 @@ int helper(int[] memo, int n) {
     return memo[n];
 }
 ```
+
+
+
+### dp 数组的遍历方式
+
+原则
+1、遍历的过程中，所需要的状态是已经计算出来的。 
+2、遍历的重点必须是存储结构的那个位置。 
+
+
+- 正向遍历
+
+```
+int[][] dp = new int[m][n];
+for (int i = 0; i < m; i++)
+    for (int j = 0; j < n; j++)
+        // 计算 dp[i][j]
+```
+
+
+- 反向遍历
+
+```
+for (int i = m - 1; i >= 0; i--)
+    for (int j = n - 1; j >= 0; j--)
+        // 计算 dp[i][j]
+```
+
+
+- 斜着遍历数组
+
+```
+// 斜着遍历数组
+for (int l = 2; l <= n; l++) {
+    for (int i = 0; i <= n - l; i++) {
+        int j = l + i - 1;
+        // 计算 dp[i][j]
+    }
+}
+```
+
+
