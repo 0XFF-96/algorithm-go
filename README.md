@@ -42,24 +42,29 @@ collect leet-code multi-solution in go
 
 4、公司编程高频题目。 https://github.com/afatcoder/LeetcodeTop
 
-5、https://zhuanlan.zhihu.com/p/115283533
-
 6、https://zhuanlan.zhihu.com/p/149409633
 
 7、刷题、https://www.zhihu.com/question/399923003/answer/1300151492
 
-9、刷 leetcode 练习题目。 https://zhuanlan.zhihu.com/p/149409633
+9、刷 leetcode 练习题目。 https://zhuanlan.zhihu.com/p/149409633 [✅]
 
-10、https://www.zhihu.com/question/399923003/answer/1300151492 go 语言进阶。
+10、https://www.zhihu.com/question/399923003/answer/1300151492 go 语言进阶。[✅]
 
 ### 参考项目
 - 1、https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
 - 2、https://github.com/yangwenmai/learning-algorithms
+
 - 3、[编程百例](https://www.zybuluo.com/Gestapo/note/32082)
+
 - 4、cheer up man: https://leetcode.com/discuss/general-discussion/623011/a-guide-for-dummies-like-me !
+
 - 5、fuck algorithm 的相关题目 
+
 - 6、golang-算法模板：https://github.com/greyireland/algorithm-pattern
+
 - 7、算法可视化文章：https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
 - 8、https://books.halfrost.com/leetcode/
 
 - https://zhuanlan.zhihu.com/p/104983442 [总结了 leetcode 各大题目的规律和做法]
@@ -69,13 +74,14 @@ collect leet-code multi-solution in go
 - // https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/
 
 ### 算法刷题模板
-- https://github.com/greyireland/algorithm-pattern
+- https://github.com/greyireland/algorithm-pattern [✅]
 
 1、go 相关数据结构， https://github.com/Workiva/go-datastructures 
 2、go, 题目集合。 https://github.com/lifei6671/interview-go
 3、系统设计题目， https://github.com/soulmachine/system-design 
 4、golang 问题， https://github.com/KeKe-Li/data-structures-questions 
 5、top-quesiton， https://github.com/afatcoder/LeetcodeTop 
+
 6、https://github.com/shgopher/GOFamily
 7、https://leetcode-cn.com/study-plan/algorithms/?progress=myeios1 
 8、https://talkgo.org/t/topic/1877
