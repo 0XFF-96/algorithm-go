@@ -73,6 +73,8 @@ type TreeNode struct {
 	Left *TreeNode
 	Right *TreeNode
 }
+
+// 不要这种方法，要写最经典的方法。
 func inorderTraversal(root *TreeNode)[]int{
 	var res []int
 

@@ -124,3 +124,61 @@ func reverseListV2(head *List) *List {
 // 5 , 6 , 2 
 // 6- 2
 // 6 - 
+
+
+### K 组翻转链表
+
+- reverseKGroup 
+
+```
+    public ListNode reverseList(ListNode head) {
+		ListNode pre = null, cur = head, next = null;
+		while(cur!=null) {
+			next = cur.next;
+			cur.next = pre;
+			pre = cur;
+			cur = next;
+		}
+		return pre;
+    }
+```
+
+```
+    public ListNode reverseKGroup(ListNode head, int k) {
+		// 建立一个哨兵节点用来返回
+		ListNode dummy = new ListNode(0);
+		dummy.next = head;
+		
+		// 两个指针用来保存需要反转数组的前后节点，用来恢复链表
+		ListNode pre = dummy;
+		ListNode next = dummy;
+		
+		// 需要一个 head 和 tail 用来保存被反转链表的头和尾
+		ListNode tail = head;
+		
+		while(next!=null) {
+			tail = head;
+			// 找到尾节点
+			for(int i=1;i<k && tail!=null;i++)
+				tail = tail.next;
+			
+			// 如果不满足 k 个了，那么此时 tail 为 null，直接反转并跳出循环
+			if(tail== null) {
+				break;
+			}
+			
+			//将尾结点的 next 保存并设为 null
+			next = tail.next;
+			tail.next = null;
+			
+			// 反转节点
+			pre.next = reverse(head);
+			
+			// 重新赋值
+			head.next = next;
+			pre = head;
+			head = head.next;
+		}
+		return dummy.next;
+    }
+```
