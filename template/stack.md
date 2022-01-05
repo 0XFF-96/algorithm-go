@@ -55,3 +55,9 @@ class FreqStack {
     HashMap<Integer, Stack<Integer>> freqToVals = new HashMap<>();
 }
 ```
+
+### 栈实现队列
+
+- 栈实现队列
+- 队列实现栈
+- 链表实现一个栈
