@@ -2,7 +2,16 @@
 
 ### LRU 的实际应用场景？
 - Redis go 里面的 链接池、Go Client 里面的链接池
-- 
+
+### LRU 和 LFU 应用场景
+
+LRU和LFU都是内存管理的页面置换算法。
+
+LRU，即：最近最少使用淘汰算法（Least Recently Used）。LRU是淘汰最长时间没有被使用的页面。
+LFU，即：最不经常使用淘汰算法（Least Frequently Used）。LFU是淘汰一段时间内，使用次数最少的页面。
+
+LRU算法适合：较大的文件比如游戏客户端（最近加载的地图文件） LFU算法适合：较小的文件和教零碎的文件比如系统文件、应用程序文件 其中：LRU消耗CPU资源较少，LFU消耗CPU资源较多。2、LFU作为负载均衡算法：保证每次使用都是最不经常使用的节点。 1、LFU作为缓存算法。 
+https://halfrost.com/lru_lfu_interview/ 。 
 
 ### 自然语言描述
 
@@ -136,4 +145,6 @@ type Element struct {
 	// The value stored with this element.
 	Value interface{}
 }
+
+
 
