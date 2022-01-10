@@ -5,7 +5,6 @@ review: 0 , 不会，没有思路
 ### 思想
 
 - 字串的动态规划，都需要用到两个指针
-- 
 
 ### longestPalindromeSubseq
 
