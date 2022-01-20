@@ -11,3 +11,5 @@
 4、https://blog.algomooc.com/ 【吴师兄算法】【超常见算法】【要熟练】
 
 6、https://github.com/liweiwei1419/LeetCode-Solutions-in-Good-Style 
+
+7、算法模板， https://github.com/greyireland/algorithm-pattern  【算法模板】【每天重复用 10 分钟过一遍】
