@@ -13,3 +13,10 @@
 6、https://github.com/liweiwei1419/LeetCode-Solutions-in-Good-Style 
 
 7、算法模板， https://github.com/greyireland/algorithm-pattern  【算法模板】【每天重复用 10 分钟过一遍】
+
+
+### 每天回复复习
+
+- 错题
+- Leetcode 专项
+- Template Pattern 
