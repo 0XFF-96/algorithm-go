@@ -54,3 +54,30 @@ func (this *MinStack) Min() int {
  * param_4 := obj.Min();
  */
 ```
+
+
+- 栈的压入和弹出序列
+- 缺点在于，不能提前 return 结果
+
+```
+func validateStackSequences(pushed []int, popped []int) bool {
+    if len(pushed) == 0 || len(popped) == 0 {
+        return true 
+    }
+
+    // 这算法的缺点是不能，提前 return 。 
+    stack := make([]int, 0, len(pushed))
+    i := 0 
+    for j := 0; j < len(pushed); j++ {
+        stack = append(stack, pushed[j])
+
+        for len(stack) > 0 && stack[len(stack)-1] == popped[i] {
+             // 循环判断 出栈
+             stack = stack[:len(stack)-1] // pop 
+             i++
+        }
+     }
+
+     return len(stack) == 0 
+}
+```
