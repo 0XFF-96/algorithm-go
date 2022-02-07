@@ -101,3 +101,37 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
   }
 }
 ```
+
+- 相同结构的树
+
+```
+func isSubStructure(A *TreeNode, B *TreeNode) bool {
+    if A == nil {
+        return false 
+    }
+
+    if B == nil {
+        return false 
+    }
+    return isSameTree(A, B) || 
+    isSubStructure(A.Left, B)  ||   
+    isSubStructure(A.Right, B)    
+}
+
+func isSameTree(pRoot1 *TreeNode, pRoot2 *TreeNode) bool {
+    if pRoot2 == nil {
+        return true 
+    }
+    if pRoot1 == nil {
+        return false 
+    }
+    if pRoot1.Val != pRoot2.Val {
+        return false 
+    }
+
+    return isSameTree(pRoot1.Left, pRoot2.Left) &&
+    isSameTree(pRoot1.Right, pRoot2.Right)
+}
+```
+
+
