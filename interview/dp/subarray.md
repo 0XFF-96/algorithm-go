@@ -19,6 +19,7 @@ func maxSubArray(nums []int) int {
 }
 
 ```
+<<<<<<< HEAD
 
 
 - 乘积最大的子数组
@@ -99,3 +100,5 @@ func maxSubarraySumCircular(nums []int) int {
 }
 
 ```
+=======
+>>>>>>> 5beafec (add lis dp algorithm solution)
