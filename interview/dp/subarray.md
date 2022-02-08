@@ -19,3 +19,31 @@ func maxSubArray(nums []int) int {
 }
 
 ```
+
+
+- 乘积最大的子数组
+
+```
+func maxProduct(nums []int) int {
+    if len(nums) == 0 {
+        return 0 
+    }
+
+    // 初始化
+    maxF := nums[0]
+    minF := nums[0]
+    ans := nums[0]
+
+    for i := 1; i < len(nums); i++{
+        mx := maxF 
+        mn := minF 
+        maxF = max(maxF * nums[i], max(nums[i], minF * nums[i]))
+        minF = min(mn * nums[i], min(nums[i], mx * nums[i]))
+
+        ans = max(maxF, ans)
+    }
+
+    return ans 
+}
+```
+
