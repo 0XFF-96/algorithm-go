@@ -29,3 +29,19 @@ func rob(nums []int) int {
     return ans 
 }
 ```
+
+- rob house 2 
+- 房屋的首尾是连接起来的，这个地方所有的房屋都 围成一圈 ，这意味着第一个房屋和最后一个房屋是紧挨着的。
+
+```
+func robWithCircle(nums []int) int {
+    n := len(nums)
+    if n == 1 {
+        return nums[0]
+    } else if n == 2 {
+        return max(nums[0], nums[1])
+    }
+
+    return max(robR(nums[1:]), robR(nums[:len(nums)-1]))
+}
+```
