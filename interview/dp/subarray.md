@@ -100,5 +100,8 @@ func maxSubarraySumCircular(nums []int) int {
 }
 
 ```
+<<<<<<< HEAD
 =======
 >>>>>>> 5beafec (add lis dp algorithm solution)
+=======
+>>>>>>> 1dd0ee9 (add stock and max subarray dynamic algorithm)
