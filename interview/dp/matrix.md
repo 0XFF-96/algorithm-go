@@ -40,3 +40,33 @@ func minPathSum(grid [][]int) int {
 }
 
 ```
+- 三角形的最小路径和。 
+
+```
+
+func minimumTotal(triangle [][]int) int {
+    // 找出自顶向下的最小路径和。
+    // 可以 【反过来求解】？
+    n := len(triangle)
+    f := make([][]int, n)
+
+    for i := 0; i < n; i ++ {
+        f[i] = make([]int, n)
+    }
+
+    f[0][0] = triangle[0][0]
+    for i := 1; i < n; i ++ {
+        f[i][0] = f[i-1][0] + triangle[i][0] // 很重要
+
+        for j := 1; j < i; j ++ {
+            f[i][j] = min(f[i-1][j-1], f[i-1][j]) + triangle[i][j]
+        }
+        f[i][i] = f[i-1][i-1] + triangle[i][i] // 这行是什么意思？
+    }
+    ans := 100000000 
+    for i := 0; i < n; i++{
+        ans = min(ans, f[n-1][i])
+    }
+    return ans 
+}
+```
