@@ -75,3 +75,30 @@ func lengthOfLongestSubstring(s string) int {
     return ans 
 }
 ```
+
+- 无重复字符串 V2 版本
+
+```
+
+func lengthOfLongestSubstring(s string) int {
+    ans := 0 
+    length := len(s)
+    left, right := 0, 0 
+
+    freqSet := map[byte]int{} // 判断是否重复元素。 map[byte]int{}, 不是  map[byte]bool{}
+    for right < length { // right 不能等于 length， right = length -1  
+        freqSet[s[right]] += 1
+        // 如果重复，向左移动，直到没有重复元素出现
+        for freqSet[s[right]] > 1 {
+            freqSet[s[left]]-- 
+            left++
+        }
+
+        ans = max(ans, right - left + 1)
+        right++
+    }
+
+    return ans 
+}
+
+```
