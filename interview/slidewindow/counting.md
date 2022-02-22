@@ -1,6 +1,6 @@
 - counting , 
-```
 
+```
 func numSubarrayBoundedMax(nums []int, left int, right int) int {
     // 这里为啥不用加 1， 而是需要 left - 1 
     return lessEqualsThan(nums, right) - lessEqualsThan(nums, left - 1)
@@ -21,3 +21,7 @@ func lessEqualsThan(nums []int, k int) int {
 }
 
 ```
+
+- 例题：至多包含两个不同字符的最长子串
+
+

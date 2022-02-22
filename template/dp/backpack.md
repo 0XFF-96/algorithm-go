@@ -105,3 +105,31 @@ int change(int amount, int[] coins) {
     return dp[n][amount];
 }
 ```
+
+### 分割子集
+
+```
+
+// 没有理解。
+func canPartition(nums []int) bool {
+    sum := 0 
+    for _, i := range nums {
+        sum += i 
+    }
+
+    if sum % 2 == 1 { // 提前返回，除不尽 
+        return false 
+    }
+    dp := make([]int, sum + 1) // 为什么是 sum 加 1， 很关键
+
+    sum = sum / 2 // 为什么？初始化需要这个操作。
+    // 为什么这样递归就可以。
+    for _, num := range nums {
+        for j := sum; j >= num; j -- {
+            dp[j] = max(dp[j], dp[j - num] + num)
+        }
+    }
+
+    return dp[sum] == sum 
+}
+```

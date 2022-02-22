@@ -60,3 +60,44 @@ func longestOnes(nums []int, k int) int {
 }
 
 ```
+
+- 至多包含两个不同字符的最长子串。
+
+```
+func lengthOfLongestSubstringTwoDistinct(s string) int {
+    hashTable := map[byte]int{}
+
+    maxn := 0 
+    left := 0 
+    right := 0
+    n := len(s)
+    for right < n {
+        hashTable[s[right]] += 1 
+
+        // 找出 【至多】 包含【两个】不同字符的【最长子串】
+        if len(hashTable) <= 2 {
+            maxn = max(maxn, sumMap(hashTable))
+        } else {
+            // 收缩滑动窗口
+            for len(hashTable) > 2 {
+                char := s[left]
+                hashTable[char] -= 1   
+                if hashTable[char] == 0 {
+                    delete(hashTable, char) // 需要移出去，要不然 len 的时候会有问题
+                }
+                left++
+            }
+        }
+        right += 1 // 一直往右移动
+    }
+    return maxn
+}
+
+func sumMap(m map[byte]int) int {
+    sum := 0 
+    for _, v := range m {
+        sum += v
+    }
+    return sum 
+}
+```
