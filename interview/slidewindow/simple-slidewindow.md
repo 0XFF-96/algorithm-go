@@ -102,3 +102,96 @@ func lengthOfLongestSubstring(s string) int {
 }
 
 ```
+
+- 链表结合双指针
+
+```
+
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
+    dummy := &ListNode{0, head}
+    
+    fast, slow := head, dummy 
+    for i := 0; i < n; i++ {
+        fast = fast.Next 
+    }
+
+    for ; fast != nil; fast = fast.Next {
+        slow = slow.Next 
+    }
+
+    slow.Next = slow.Next.Next // 不会溢出，因为 fast 有相关的技巧了。
+    return dummy.Next 
+}
+
+```
+
+```
+
+func middleNode(head *ListNode) *ListNode {
+    slow := head 
+    fast := head 
+
+    for ; fast != nil &&fast.Next != nil; {
+        slow = slow.Next 
+        fast = fast.Next.Next 
+    }
+    return slow 
+}
+
+```
+
+- 链表环检测2
+- 重点在与此时的数学公式推导。
+
+```
+
+func detectCycle(head *ListNode) *ListNode {
+    slow, fast := head, head 
+    for fast != nil {
+        slow = slow.Next 
+        if fast.Next == nil {
+            return nil // 没有环了
+        }
+        fast = fast.Next.Next 
+        if fast == slow { // 相遇了
+            // 重新开启计算
+            p := head 
+            for p != slow {
+                p = p.Next
+                slow = slow.Next
+            }
+            return p 
+        }
+    }
+    return nil 
+}
+
+```
+
+- 相交链表
+
+```
+
+func getIntersectionNode(headA, headB *ListNode) *ListNode {
+    if headA == nil || headB == nil {
+        return nil 
+    }
+
+    pa, pb := headA, headB
+    for pa != pb {
+        if pa == nil { // 遍历完后，从 PB 开始
+            pa = headB
+        } else {
+            pa = pa.Next 
+        }
+
+        if pb == nil { // 遍历完后，从 PA 开始
+            pb = headA
+        } else {
+            pb = pb.Next 
+        }
+    }
+    return pa 
+}
+
+```

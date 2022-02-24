@@ -24,3 +24,27 @@ func findMaxAverage(nums []int, k int) float64 {
     return float64(res)/ float64(k) 
 }
 ```
+
+
+- 盛水最多的容器
+
+```
+
+func maxArea(height []int) int {
+    maxArea := -1 
+    left := 0 
+    right := len(height) - 1 // 能够取到的 
+    for left < right {
+        maxArea = max(maxArea, min(height[left], height[right]) * (right - left))
+
+        // 木桶原理，短板效应
+        if height[left] < height[right] { // 哪个边短，向哪边移动。
+            left++
+        } else {
+            right--
+        }
+    }
+    return maxArea
+}
+
+```
