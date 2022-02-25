@@ -195,3 +195,73 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 }
 
 ```
+
+- 排序数组移除元素， 最多有 2 个元素。 
+
+```
+
+func removeDuplicates(nums []int) int {
+    if len(nums) <= 1 {
+        return len(nums)
+    }
+    // 因为是已经排序的了。 
+
+    slow := 2 
+    for fast := 2; fast < len(nums); fast ++ {
+        // 为什么是 slow - 2 
+        // 当最多有一个的时候，是 nums[fast] == nums[slow] ?
+        // fast - 2 == slow ?不一定。
+        if nums[fast] != nums[slow - 2]  {
+            nums[slow] = nums[fast]
+            slow += 1
+        }
+    }
+    return slow
+}
+
+```
+
+```
+
+func moveZeroes(nums []int)  {
+    slow := 0 
+    fast := 0 
+
+    for fast < len(nums) {
+        if nums[fast] != 0 {
+            tmp := nums[fast]
+            nums[fast] = nums[slow]
+            nums[slow] = tmp 
+            slow++
+        }
+        fast += 1 
+    }
+    return 
+}
+
+```
+
+
+```
+
+func twoSum(numbers []int, target int) []int {
+    left := 0 
+    right := len(numbers) - 1 
+
+    for left < right { // 注意，不能够等于
+        sum := numbers[left] + numbers[right]
+        
+        if sum == target {
+            // 给你一个下标从 1 开始的整数数组
+            return []int{left + 1, right + 1} // ? 
+        } else if ( sum > target ) {
+            // 指针移动方向
+            right-- 
+        } else {
+            left++
+        }
+    }
+    return []int{-1, -1}
+}
+```
+
