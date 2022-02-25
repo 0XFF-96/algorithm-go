@@ -33,3 +33,31 @@ func findMaxConsecutiveOnes(nums []int) int {
 }
 
 ```
+
+
+- (不定窗口滑动字符串） 
+- 删除一个元素后，最长为 1 的子数组长度。 
+
+```
+
+func longestSubarray(nums []int) int {
+    // 三指针
+    res := 0 
+    cnt := 0 
+    left := 0 
+    for right := 0; right < len(nums); right++ {
+        if nums[right] == 0 {
+            cnt++
+        }
+        for cnt > 1 { // 从中删掉一个元素
+            if nums[left] == 0 { // 移动指针了
+                cnt-- // 为什么是遇到 0 才减下来？
+            }
+            left++
+        }
+        res = max(res, right - left) // 为什么不需要加 1 。
+    }
+    return res 
+}
+
+```
