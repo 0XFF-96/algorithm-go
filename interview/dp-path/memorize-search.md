@@ -40,3 +40,96 @@ func countRoutes(locations []int, start int, finish int, fuel int) int {
 }
 
 ```
+
+- 最差的 golang 实现（） 照着模板改的。 
+- 在 need < fuel, need <= fuel, fuel > need  的条件判断改写中，出了错。耽误了一些时间进行 debug 处理。 
+
+```
+var mod = 1000000007
+var cache [][]int  // 为什么需要用这个 cache ?
+// 二维数组每一个代表什么意思？
+
+func countRoutes(locations []int, start int, finish int, fuel int) int {
+    if len(locations) == 0 {
+        return 0 
+    }
+
+    n := len(locations)
+    cache = make([][]int, n)
+    
+    for i := 0; i < len(cache); i ++ {
+        cache[i] = make([]int, fuel + 1) // fuel + 1 避免不必要判断？！
+    }
+
+     // 初始化 cache 矩阵
+    for i := 0; i < n; i++ {
+        for j := 0; j < fuel + 1; j++{
+                cache[i][j] = -1 
+        }
+    }
+
+    // fmt.Println(cache)
+
+    // return: 在位置 u 出发， 油量为 fuel 的前提下
+    // 到达 end 的 [ 路径数量 ]
+    return dfs(locations, start, finish, fuel)
+}
+
+func dfs(ls []int, u, end, fuel int) int {
+    // <<<<<<<<<<<<<<<<<< 递归基开始 >>>>>>>>>>>>>>>>>>>>>>>
+    // 递归结束条件？
+    // 有数值，说明已经走过
+    // 其实 cache 用零初始化也是可以的对吧。
+    if cache[u][fuel] != -1 {
+        return cache[u][fuel]
+    }
+
+    // 先判断是否够 fuel
+    // 重要性质，如果不能一步到终点到话，后续也不能到终点了。
+    need := abs(ls[u] - ls[end])
+    // 1. 不能到达的情况
+    if need > fuel { // 这里为什么不能等于？ 因为后面可以判断
+        cache[u][fuel] = 0 
+        return 0 
+    }
+
+    // fmt.Println("dfs:", u, end, fuel)
+
+    n := len(ls)
+    // 开始 dfs 
+    // 类似于回溯的算法，但是不需要 backtrack 
+    // 因为有 cache 记录了是否已走过。
+    sum := 0 
+    // 如果已经是可以行的路径，就先算 1 
+    if u == end {
+        sum = 1 
+    }
+
+    // <<<<<<<<<<<<<<<<<< 递归基结束 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    // 1. 从 locations 数组开始枚举 到 u 这个点的距离。
+    // 2. 逐步消耗 fuel 
+    for i := 0; i < n; i++ {
+        // i = u 时无须枚举，否则会死循环
+        if i != u {
+            need := abs(ls[i] - ls[u])
+            if  need <= fuel { // need > fuel, 和上面一致的判断。 // need < fuel , fuel >= need 
+                // 能否用多叉树结构，表示这个递归深入的过程？
+                sum += dfs(ls, i, end, fuel - need) // 递归深入
+                sum %= mod 
+            }
+        }
+    }
+    cache[u][fuel] = sum
+    return sum 
+}
+
+
+func abs(i int) int {
+    if i > 0 {
+        return i 
+    } else {
+        return -i
+    }
+}
+```
