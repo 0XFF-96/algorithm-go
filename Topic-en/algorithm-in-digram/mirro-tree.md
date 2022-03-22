@@ -57,3 +57,55 @@ func mirrorTree(root *TreeNode) *TreeNode {
 }
 
 ```
+
+
+- 是否镜像二叉树 
+
+- 错误版本
+
+```
+
+func isSymmetric(root *TreeNode) bool {
+    if root == nil {
+        return true
+    }
+    
+    // 后序遍历
+    isLeft := isSymmetric(root.Left)
+    isRight := isSymmetric(root.Right)
+
+    ok := false 
+    if root.Right != nil && root.Left != nil && root.Right.Val == root.Left.Val {
+        ok = true 
+    }
+    if root.Right == nil && root.Left == nil {
+        ok = true
+    }
+
+    return isLeft && isRight && ok 
+}
+
+```
+
+
+```
+
+func isSymmetric(root *TreeNode) bool {
+    return root == nil || recur(root.Left, root.Right)
+}
+
+
+func recur(left *TreeNode, right *TreeNode) bool {
+    if left == nil && right == nil {
+        return true
+    }
+    // 提前剪枝
+    if left == nil || right == nil || left.Val != right.Val {
+        return false 
+    }
+
+    // 递归深入, 注意入参数
+    return recur(left.Left, right.Right) && recur(left.Right, right.Left)
+}
+
+```
