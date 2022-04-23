@@ -70,3 +70,25 @@ func search(nums []int, target int) bool {
 }
 
 ```
+
+- 旋转数组，搜索最小值 
+
+```
+func findMin(nums []int) int {
+    low, high := 0, len(nums) -1 
+
+    // 向左边界迫近的写法， 收敛于左边界
+    // low < high, high = pivot, low = pivot + 1 
+    for low < high {
+        pivot := low + (high - low) / 2 
+
+        if nums[pivot] < nums[high] {
+            high = pivot
+        } else {
+            low = pivot + 1 
+        }
+    }
+    return nums[low]
+}
+
+```
