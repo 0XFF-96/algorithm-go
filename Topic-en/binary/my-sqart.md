@@ -24,3 +24,24 @@ func mySqrt(x int) int {
 ```
 
 ```
+
+# 367 有效数的完全平方
+
+```
+func isPerfectSquare(num int) bool {
+    left, right := 0, num
+    for left <= right {
+        mid := (left + right) / 2
+        square := mid * mid
+        if square < num {
+            left = mid + 1
+        } else if square > num {
+            right = mid - 1
+        } else {
+            return true
+        }
+    }
+    return false
+}
+
+```

@@ -31,3 +31,19 @@ func findPeakElement(nums []int) int {
 
 ```
 
+
+# 最简单的方法， 相当于滑动窗口
+
+```
+func peakIndexInMountainArray(A []int) int {
+
+	for i, v := range A {
+		if i == 0 {
+			continue
+		} else if v > A[i-1] && v > A[i+1] {
+			return i
+		}
+	}
+	return 0
+}
+```
