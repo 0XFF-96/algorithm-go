@@ -1,7 +1,7 @@
-# algorithm-go
-collect leet-code multi-solution in go
+# Algorithm-go
+1. collect leet-code multi-solution in go
 
-### 练习 OJ/Leetcode 的不同境界
+### 练习 OJ/Leetcode 的十二重境界
 
 1、能够把题目归类（关键字）
 
@@ -101,10 +101,12 @@ https://labuladong.github.io/algo/2/
 
 11、GO-question, https://golang.design/go-questions/map/unordered/
 
-https://speakerd.s3.amazonaws.com/presentations/10ac0b1d76a6463aa98ad6a9dec917a7/GopherCon_v10.0.pdf
-
 12、算法图解/Leetcode 图解， https://www.liwei.party/
 
 13、算法模板， https://github.com/greyireland/algorithm-pattern 
 
 14、代码随想， https://programmercarl.com/ 
+
+
+1. Understand Channels 
+    https://speakerd.s3.amazonaws.com/presentations/10ac0b1d76a6463aa98ad6a9dec917a7/GopherCon_v10.0.pdf
